@@ -1,5 +1,6 @@
 * makem-action
-This is a GitHub action that runs makem on a simple Emacs Lisp package with minimal setup.
+This is a GitHub action that runs [[https://github.com/alphapapa/makem.sh][makem]] on a simple Emacs Lisp package with minimal setup.
+It internally uses [[https://github.com/akirak/makem.nix/][makem.nix]] to simplify the configuration.
 ** Usage
 *** Example
 Below is a minimal example that lint and compile Emacs Lisp source files in the directory.
