@@ -1,0 +1,2 @@
+* makem-action
+This is a GitHub action that runs makem on a simple Emacs Lisp package with minimal setup.
