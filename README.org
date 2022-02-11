@@ -1,2 +1,21 @@
 * makem-action
 This is a GitHub action that runs makem on a simple Emacs Lisp package with minimal setup.
+** Usage
+*** Example
+Below is a minimal example that lint and compile Emacs Lisp source files in the directory.
+
+#+begin_src yaml
+  name: 'Lint'
+  on:
+    pull_request:
+      paths:
+      - '**.el'
+  jobs:
+    lint:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - uses: akirak/makem-action@master
+        with:
+          min-emacs-version: 26.1
+#+end_src
